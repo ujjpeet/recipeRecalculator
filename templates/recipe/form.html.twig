@@ -1,0 +1,28 @@
+<h3>Make your own recipe!</h3>
+{{ form_start(form) }}
+<div class="row">
+    <div class="col-12 col-md-6 col-lg-4">
+        {{ form_row(form.title, {'label': 'Name your new recipe'}) }}
+    </div>
+</div>
+<div class="row">
+    <div class="col-12 col-md-6 col-lg-4">
+        {{ form_row(form.serving, {'label': 'For how many people you are cooking?'}) }}
+    </div>
+</div>
+<div class="row">
+    <div class="col-12 col-md-6 col-lg-4">
+        {{ form_row(form.ingredientName, {'label': 'Select the ingredient you would like to change'}) }}
+    </div>
+</div>
+<div class="row">
+    <div class="col-12 col-md-6 col-lg-4">
+        {{ form_row(form.ingredientAmount, {'label': 'Finally add your custom amount'}) }}
+    </div>
+</div>
+<div class="row mt-3">
+    <div class="col">
+        <button class="btn btn-primary">{{ button_label|default('Calculate new recipe') }}</button>
+    </div>
+</div>
+{{ form_end(form) }}

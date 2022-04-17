@@ -1,0 +1,16 @@
+
+table, th, td {
+    border: 1px solid black;
+}
+
+table thead {
+    font-weight: bold;
+}
+
+table td {
+    min-width: 250px !important;
+}
+
+table {
+    box-shadow: 1px 1px 1px #999;
+}
